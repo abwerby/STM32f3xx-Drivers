@@ -1,0 +1,17 @@
+--cpu=Cortex-M4.fp
+".\objects\gpio_program.o"
+".\objects\main.o"
+".\objects\rcc_program.o"
+".\objects\usart_program.o"
+".\objects\startup_stm32f303xe.o"
+".\objects\system_stm32f3xx.o"
+".\objects\freertos_evr.o"
+".\objects\list.o"
+".\objects\heap_1.o"
+".\objects\port.o"
+".\objects\queue.o"
+".\objects\tasks.o"
+--strict --scatter ".\Objects\FreeRTOS_Demo.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list ".\Listings\FreeRTOS_Demo.map" -o .\Objects\FreeRTOS_Demo.axf

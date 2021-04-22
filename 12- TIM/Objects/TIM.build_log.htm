@@ -1,0 +1,149 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: µVision V5.25.2.0
+Copyright (C) 2018 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: abdelrhman werby, must, LIC=9WS9U-SKNZ7-CJ06Z-JYWGG-NG09J-E0765
+ 
+Tool Versions:
+Toolchain:       MDK-ARM Plus  Version: 5.25.2.0
+Toolchain Path:  C:\Keil_v5\ARM\ARMCC\Bin
+C Compiler:      Armcc.exe V5.06 update 6 (build 750)
+Assembler:       Armasm.exe V5.06 update 6 (build 750)
+Linker/Locator:  ArmLink.exe V5.06 update 6 (build 750)
+Library Manager: ArmAr.exe V5.06 update 6 (build 750)
+Hex Converter:   FromElf.exe V5.06 update 6 (build 750)
+CPU DLL:         SARMCM3.DLL V5.25.2.0
+Dialog DLL:      DCM.DLL V1.17.1.0
+Target DLL:      STLink\ST-LINKIII-KEIL_SWO.dll V3.0.1.0
+Dialog DLL:      TCM.DLL V1.35.1.0
+ 
+<h2>Project:</h2>
+C:\Users\abdelrhman\Documents\keil\Bare-Metal\ARM_IMT\12- TIM\TIM.uvprojx
+Project File Date:  10/16/2020
+
+<h2>Output:</h2>
+*** Using Compiler 'V5.06 update 6 (build 750)', folder: 'C:\Keil_v5\ARM\ARMCC\Bin'
+Build target 'Target 1'
+compiling main.c...
+DMA_private.h(32): warning:  #1-D: last line of file ends without a newline
+  #endif
+DMA_interface.h(62): warning:  #1-D: last line of file ends without a newline
+  #endif
+STK_interface.h(21): warning:  #1-D: last line of file ends without a newline
+  #endif
+DAC_private.h(32): warning:  #1-D: last line of file ends without a newline
+  #endif
+DAC_interface.h(67): warning:  #1-D: last line of file ends without a newline
+  #endif
+NVIC_interface.h(17): warning:  #1-D: last line of file ends without a newline
+  #endif
+main.c: 6 warnings, 0 errors
+compiling STK_program.c...
+BIT_MATH.h(15): warning:  #1-D: last line of file ends without a newline
+  #endif 
+STK_private.h(24): warning:  #1-D: last line of file ends without a newline
+  #endif
+STK_interface.h(21): warning:  #1-D: last line of file ends without a newline
+  #endif
+STK_program.c: 3 warnings, 0 errors
+compiling DAC_program.c...
+BIT_MATH.h(15): warning:  #1-D: last line of file ends without a newline
+  #endif 
+DAC_private.h(32): warning:  #1-D: last line of file ends without a newline
+  #endif
+DAC_interface.h(67): warning:  #1-D: last line of file ends without a newline
+  #endif
+DAC_program.c: 3 warnings, 0 errors
+compiling RCC_program.c...
+BIT_MATH.h(15): warning:  #1-D: last line of file ends without a newline
+  #endif 
+RCC_private.h(71): warning:  #1-D: last line of file ends without a newline
+  #endif
+RCC_program.c(101): warning:  #940-D: missing return statement at end of non-void function "RCC_uint8_tGetClock" 
+  }
+RCC_program.c: 3 warnings, 0 errors
+compiling DMA_program.c...
+BIT_MATH.h(15): warning:  #1-D: last line of file ends without a newline
+  #endif 
+DMA_private.h(32): warning:  #1-D: last line of file ends without a newline
+  #endif
+DMA_config.h(5): warning:  #1-D: last line of file ends without a newline
+  /*****************************************/
+DMA_interface.h(62): warning:  #1-D: last line of file ends without a newline
+  #endif
+DMA_program.c(15): warning:  #513-D: a value of type "volatile uint32_t *" cannot be assigned to an entity of type "uint32_t"
+  	DMAx->Channel[dma_config->Channel_Number].CPAR = dma_config->Peripheral_Reg;
+DMA_program.c(16): warning:  #513-D: a value of type "volatile uint32_t *" cannot be assigned to an entity of type "uint32_t"
+  	DMAx->Channel[dma_config->Channel_Number].CMAR = dma_config->Memory_Address;
+DMA_program.c: 6 warnings, 0 errors
+compiling NVIC_program.c...
+BIT_MATH.h(15): warning:  #1-D: last line of file ends without a newline
+  #endif 
+NVIC_interface.h(17): warning:  #1-D: last line of file ends without a newline
+  #endif
+NVIC_program.c: 2 warnings, 0 errors
+compiling GPIO_program.c...
+GPIO_private.h(42): warning:  #1-D: last line of file ends without a newline
+  #endif
+GPIO_program.c: 1 warning, 0 errors
+compiling TIM_program.c...
+BIT_MATH.h(15): warning:  #1-D: last line of file ends without a newline
+  #endif 
+TIM_program.c(8): warning:  #550-D: variable "TIM1_CallBack"  was set but never used
+  static void (* TIM1_CallBack) (void) = NULL ;
+TIM_program.c(12): warning:  #550-D: variable "TIM6_CallBack"  was set but never used
+  static void (* TIM6_CallBack) (void) = NULL ;
+TIM_program.c(14): warning:  #550-D: variable "TIM8_CallBack"  was set but never used
+  static void (* TIM8_CallBack) (void) = NULL ;
+TIM_program.c(15): warning:  #177-D: variable "TIM9_CallBack"  was declared but never referenced
+  static void (* TIM9_CallBack) (void) = NULL ;
+TIM_program.c(16): warning:  #550-D: variable "TIM20_CallBack"  was set but never used
+  static void (* TIM20_CallBack) (void) = NULL ;
+TIM_program.c(17): warning:  #550-D: variable "TIM15_CallBack"  was set but never used
+  static void (* TIM15_CallBack) (void) = NULL ;
+TIM_program.c(18): warning:  #550-D: variable "TIM16_CallBack"  was set but never used
+  static void (* TIM16_CallBack) (void) = NULL ;
+TIM_program.c(19): warning:  #550-D: variable "TIM17_CallBack"  was set but never used
+  static void (* TIM17_CallBack) (void) = NULL ;
+TIM_program.c: 9 warnings, 0 errors
+assembling startup_stm32f303xe.s...
+compiling system_stm32f3xx.c...
+linking...
+Program Size: Code=668 RO-data=436 RW-data=56 ZI-data=1632  
+".\Objects\TIM.axf" - 0 Error(s), 33 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: ARM
+                http://www.keil.com/pack/ARM.CMSIS.5.7.0.pack
+                ARM.CMSIS.5.7.0
+                CMSIS (Cortex Microcontroller Software Interface Standard)
+   * Component: CORE Version: 5.4.0
+
+Package Vendor: Keil
+                http://www.keil.com/pack/Keil.STM32F3xx_DFP.2.1.0.pack
+                Keil.STM32F3xx_DFP.2.1.0
+                STMicroelectronics STM32F3 Series Device Support and Examples
+   * Component: Startup Version: 1.0.0
+
+<h2>Collection of Component include folders:</h2>
+  .\RTE\_Target_1
+  C:\Keil_v5\ARM\PACK\ARM\CMSIS\5.7.0\CMSIS\Core\Include
+  C:\Keil_v5\ARM\PACK\Keil\STM32F3xx_DFP\2.1.0\Drivers\CMSIS\Device\ST\STM32F3xx\Include
+
+<h2>Collection of Component Files used:</h2>
+
+   * Component: ARM::CMSIS:CORE:5.4.0
+
+   * Component: Keil.Standalone::Device:Startup:1.0.0
+      Source file:   Drivers\CMSIS\Device\ST\STM32F3xx\Source\Templates\system_stm32f3xx.c
+      Include file:  Drivers\CMSIS\Device\ST\STM32F3xx\Include\stm32f3xx.h
+      Source file:   MDK\Device\Source\ARM\STM32F3xx_OPT.s
+      Source file:   Drivers\CMSIS\Device\ST\STM32F3xx\Source\Templates\arm\startup_stm32f303xe.s
+Build Time Elapsed:  00:00:03
+</pre>
+</body>
+</html>
